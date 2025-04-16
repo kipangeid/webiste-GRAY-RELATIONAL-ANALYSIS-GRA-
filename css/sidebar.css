@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        overflow: auto; /* scroll akan muncul bila dibutuhkan */
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: orange;
+    color: white;
+    padding: 15px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 60px; /* bawah header */
+    bottom: 50px; /* atas footer */
+    padding: 30px;
+    left: 0;
+    width: 250px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+/* Sidebar menu */
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.sidebar ul li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* CONTENT STYLING */
+.content {
+    background-color: #ffffff;
+    padding: 80px 30px 100px 30px; /* Biar konten nggak ketutup footer */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-left: 260px;
+    min-height: calc(100vh - 110px); /* tinggi layar dikurangi header dan footer */
+    overflow-y: auto;
+    animation: fadeIn 0.5s ease;
+    
+}
+
+
+.content h2 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+form input, form select {
+    padding: 12px;
+    margin: 8px 10px 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #5c6bc0;
+    box-shadow: 0 0 8px rgba(92, 107, 192, 0.3);
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3f51b5;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #333;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    background-color: white;
+}
+
+thead {
+    background-color: #5c6bc0;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* tombol hapus */
+table a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+table a:hover{
+    background-color: #ac0000;
+
+}
+
+/* Styling untuk tombol cetak PDF */
+.btn-cetak {
+    display: inline-block;
+    float: right;
+    padding: 10px 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-cetak:hover {
+    background-color: #45a049;
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* DASHBOARD CARD STYLE */
+.dashboard-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard-card h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table style */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.content table th,
+.content table td {
+    padding: 12px;
+    border: 1px solid #474747;
+    text-align: left;
+}
+
+.content table th {
+    background-color: orange;
+}
