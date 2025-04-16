@@ -1,5 +1,4 @@
 # Website GRA (Gray Relational Analysis)
-Gray Relational Analysis (GRA)
 Gray Relational Analysis (GRA) adalah metode yang digunakan untuk menganalisis hubungan antara beberapa alternatif dan kriteria. Metode ini sangat berguna dalam pengambilan keputusan terutama ketika ada banyak alternatif yang harus dipertimbangkan berdasarkan sejumlah kriteria yang berbeda.
 Pada proyek ini, GRA diterapkan untuk penentuan penerima beasiswa berdasarkan nilai-nilai yang dimiliki oleh setiap siswa. Proses GRA melibatkan langkah-langkah berikut:
 -Normalisasi Data: Setiap nilai yang diperoleh siswa akan dinormalisasi agar berada dalam skala yang sama (misalnya 0 sampai 1).
