@@ -6,6 +6,7 @@ Pada proyek ini, GRA diterapkan untuk penentuan penerima beasiswa berdasarkan ni
 - Menghitung Selisih Absolut: Selisih antara data alternatif dan referensi dihitung untuk menentukan kedekatannya.
 - Menghitung Koefisien Relasional: Koefisien ini menggambarkan hubungan antara data alternatif dan referensi.
 - Menentukan Derajat Hubungan: Rata-rata koefisien relasional digunakan untuk mendapatkan peringkat dari setiap alternatif.
+  
 GRA memungkinkan untuk memperhitungkan berbagai kriteria secara objektif dan menghasilkan peringkat yang bisa dijadikan dasar dalam pengambilan keputusan yang lebih baik.
 
 
